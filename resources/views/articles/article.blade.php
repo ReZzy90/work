@@ -2,7 +2,6 @@
 
 @section('content')
     <style>
-        /* Article Styling */
         h1 {
             font-size: 2em;
             color: #007BFF;

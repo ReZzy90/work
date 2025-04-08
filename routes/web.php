@@ -3,17 +3,8 @@
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
-/*
-|--------------------------------------------------------------------------
-| Web Routes
-|--------------------------------------------------------------------------
-|
-| This file contains all the routes for managing articles using session.
-| No database or JSON files required.
-|
-*/
 
-// --- Session-based article helper functions ---
+// Session for stockinng articles
 function getArticles()
 {
     if (!session()->has('articles')) {
@@ -103,7 +94,7 @@ Route::get('/articles/delete/{id}', function ($id) {
     }
 
     unset($articles[$id]);
-    $articles = array_values($articles); // Reindex to avoid gaps in array keys
+    $articles = array_values($articles); 
 
     saveArticles($articles);
     return redirect()->route('articles');

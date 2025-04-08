@@ -2,7 +2,6 @@
 
 @section('content')
     <style>
-        /* Table Styling */
         table {
             width: 100%;
             margin-top: 20px;
@@ -16,8 +15,8 @@
         }
 
         table th {
-            background-color: #333; /* Dark background for table headers */
-            color: white; /* White text for headers */
+            background-color: #333; 
+            color: white; 
         }
 
         table tr:hover {
@@ -30,15 +29,14 @@
             margin: 5px;
             text-decoration: none;
             color: #fff;
-            background-color: black; /* Make all links look like black buttons */
+            background-color: black;
             border-radius: 4px;
         }
 
         a:hover {
-            background-color: #333; /* Darken on hover */
+            background-color: #333; 
         }
 
-        /* Button Styling */
         .btn {
             display: inline-block;
             padding: 10px 15px;
